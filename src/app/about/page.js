@@ -3,10 +3,17 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import styles from "./about.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 
 const page = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8 }}
+    >
     <div className={styles.about}>
       <div className={styles.container}>
         {" "}
@@ -54,6 +61,7 @@ const page = () => {
         />
       </div>
     </div>
+    </motion.div>
   );
 };
 

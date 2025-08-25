@@ -1,9 +1,16 @@
 import React from "react";
 import styles from './skills.module.css'
 import skillsData from "./SkillsData";
+import { motion } from "framer-motion";
+
 
 const Skills = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8 }}
+    >
     <div  className={styles.section}>
       <h2 className={styles.skillstitle}>Skills</h2>
       <div className={styles.skillcontainer}>
@@ -26,6 +33,7 @@ const Skills = () => {
         ))}
       </div>
     </div>
+    </motion.div>
   );
 };
 

@@ -7,9 +7,16 @@ import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 const Nav = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8 }}
+    >
     <div>
       <div className={style.Container}>
         <div className={style.nav}>
@@ -41,6 +48,7 @@ const Nav = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 

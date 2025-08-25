@@ -12,9 +12,16 @@ import {
 import clsx from "clsx";
 import styles from "./porjects.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 const Projects = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8 }}
+    >
     <section
       id="projects"
       className={clsx(styles.section, styles.projectsSection)}>
@@ -196,6 +203,7 @@ const Projects = () => {
         {/* <a href="#" className="btn btn-primary view-more-btn b">View More Projects</a> */}
       </div>
     </section>
+    </motion.div>
   );
 };
 

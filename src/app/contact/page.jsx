@@ -4,9 +4,16 @@ import React from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 import styles from './contact.module.css';
 import clsx from 'clsx';
+import { motion } from "framer-motion";
+
 
 const Contact = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.8 }}
+    >
     <section id="contact" className={styles.section}>
       <div className={clsx(styles.container , styles.contactsection)}>
         <div className={styles.contactinfo}>
@@ -72,6 +79,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </motion.div>
   );
 };
 
