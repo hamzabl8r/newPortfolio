@@ -18,7 +18,7 @@ const page = () => {
       <div className={styles.container}>
         {" "}
         <div className={styles.title}>
-          <h1 className={styles.name}>Hello, I'm <span > Hamza Beji</span>  </h1>
+          <h1 className={styles.name}>Hello, I&#39;m <span > Hamza Beji</span>  </h1>
           <h2 className={styles.typew}>
             <Typewriter
               words={[
@@ -36,7 +36,7 @@ const page = () => {
           <h2>About Me</h2>
           <p>
             Passionate <strong>Software Engineering student</strong> at the{" "}
-            <strong>Faculty of Sciences of Gabés (FSG)</strong>, where I'm
+            <strong>Faculty of Sciences of Gabés (FSG)</strong>, where I&#39;m
             building strong foundations in algorithms, system design, and
             computer science theory. I am enthusiastic about solving complex
             problems through efficient code and innovative solutions.
@@ -47,7 +47,7 @@ const page = () => {
             <strong>Software Development Bootcamp at GoMyCode</strong>. This
             intensive training sharpened my expertise in modern web technologies
             and full-stack development, preparing me for real-world challenges.
-            I am now seeking opportunities to apply what I've learned.
+            I am now seeking opportunities to apply what I&#39;ve learned.
           </p>
         </div>
       </div>
