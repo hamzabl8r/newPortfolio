@@ -58,9 +58,9 @@ const Projects = () => {
             />
             <div className={styles.projectcardcontent}>
               <div className={styles.projectcardtags}>
-                <span className={styles.projectcardtags}>JavaScript</span>
-                <span className={styles.projectcardtags}>HTML</span>
-                <span className={styles.projectcardtags}>CSS</span>
+                <span className={styles.projectcardtag}>JavaScript</span>
+                <span className={styles.projectcardtag}>HTML</span>
+                <span className={styles.projectcardtag}>CSS</span>
               </div>
               <h3>Calculator</h3>
               <p>
@@ -90,10 +90,10 @@ const Projects = () => {
               className={styles.projectcardimage}
             />
             <div className={styles.projectcardcontent}>
-              <div className={styles.projectcardtags}>
-                <span className={styles.projectcardtags}>JavaScript</span>
-                <span className={styles.projectcardtags}>HTML</span>
-                <span className={styles.projectcardtags}>CSS</span>
+              <div className={styles.projectcardtag}>
+                <span className={styles.projectcardtag}>JavaScript</span>
+                <span className={styles.projectcardtag}>HTML</span>
+                <span className={styles.projectcardtag}>CSS</span>
               </div>
               <h3>X-O Game</h3>
               <p>
@@ -123,10 +123,10 @@ const Projects = () => {
               className={styles.projectcardimage}
             />
             <div className={styles.projectcardcontent}>
-              <div className={styles.projectcardtags}>
-                <span className={styles.projectcardtags}>React.js</span>
-                <span className={styles.projectcardtags}>Axios</span>
-                <span className={styles.projectcardtags}>CSS</span>
+              <div className={styles.projectcardtag}>
+                <span className={styles.projectcardtag}>React.js</span>
+                <span className={styles.projectcardtag}>Axios</span>
+                <span className={styles.projectcardtag}>CSS</span>
               </div>
               <h3>Weather App</h3>
               <p>
@@ -159,8 +159,8 @@ const Projects = () => {
             />
             <div className={styles.projectcardcontent}>
               <div className={styles.projectcardtags}>
-                <span className={styles.projectcardtags}>React.js</span>
-                <span className={styles.projectcardtags}>Redux Toolkit</span>
+                <span className={styles.projectcardtag}>React.js</span>
+                <span className={styles.projectcardtag}>Redux Toolkit</span>
               </div>
               <h3>TODO App</h3>
               <p>
