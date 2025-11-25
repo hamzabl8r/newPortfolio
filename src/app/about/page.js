@@ -70,6 +70,7 @@ const AboutPage = () => {
           />
         </div>
       </div>
+      
     </motion.div>
   );
 };
