@@ -53,7 +53,7 @@ const page = () => {
       </div>
       <div className={styles.pict}>
         <Image
-          src="/developer_male.jpg"
+          src="/Hamzabeji-dev.jpg"
           alt="developer web"
           width={300}
           height={300}
