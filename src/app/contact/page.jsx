@@ -19,8 +19,7 @@ const Contact = () => {
         <div className={styles.contactinfo}>
           <h2>Get In Touch</h2>
           <p>
-            I'm currently seeking new opportunities and challenges. Whether you have a question or just want to say hi, my inbox is always open. I'll do my best to get back to you as soon as possible.
-          </p>
+Seeking new opportunities. Let's connect and see how we can work together.          </p>
           <div className={styles.contactdetails}>
             <div className={styles.contactdetail}>
               <div className={styles.contactdetailicon}>
