@@ -1,117 +1,159 @@
-.about{
-  width: 95%;
-  height: auto;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-  font-family: monospace;
+.pageWrapper {
+  /* لضمان أن الـ About يظهر في وسط الشاشة */
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 20px;
+  min-height: 100vh; /* لملء ارتفاع الشاشة */
+  padding: 40px 20px;
 }
 
+.about {
+  width: 90%;
+  max-width: 1200px; /* تحديد أقصى عرض للتصميم */
+  display: flex;
+  gap: 40px; /* المسافة بين الصندوق الأبيض والصورة */
+  align-items: stretch; /* لتمديد الصندوقين لنفس الارتفاع إذا لزم الأمر */
+  font-family: monospace;
+  text-align: left;
+}
 
-.container{
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-  padding: 20px;
+/* صندوق المعلومات (الكارد الأبيض) */
+.infoBox {
+  width: 60%;
+  padding: 40px;
   background-color: #ffffff;
   border-radius: 15px;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
-.name{
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
+
+.title {
+  margin-bottom: 30px;
+  text-align: center;
 }
-.name span{
-  font-size: 30px;
+
+.name {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.name span {
   color: #0a5ea4;
 }
-.typew{
-  font-size: 18px;
-  margin-bottom: 10px;
+
+.typew {
+  font-size: 20px;
   text-transform: uppercase;
   color: #777777;
+  font-weight: 400;
+}
 
+.description {
+  margin-top: 30px;
 }
-.description{
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.description h2{
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #0a5ea4;
-}
-.description p{
-  font-size: 18px;
-  color: black;
-}
-.description strong{
-  font-weight: bold;
+
+.description h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
   color: #0a5ea4;
 }
 
-
-.pict{
-  width: 30%;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 50%;
+.description p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 15px;
 }
-.img{
+
+.description strong,
+.description a strong {
+  font-weight: 700;
+  color: #0a5ea4;
+  text-decoration: none;
+}
+
+/* صندوق الصورة */
+.imageBox {
+  width: 40%;
+  /* حذف border-radius: 50% لجعله مربع/مستطيل */
+  border-radius: 15px;
+  overflow: hidden; /* لحماية الصورة من الخروج عن الحدود */
+}
+
+.img {
   width: 100%;
-  height: auto;
-  border-radius: 50%;
+  height: 100%; /* لملء الـ imageBox */
+  object-fit: cover; /* لضمان أن الصورة تملأ المساحة دون تشوه */
 }
+
+/* --- Media Queries للتحسين على الشاشات الصغيرة --- */
+
+@media (max-width: 1024px) {
+  .about {
+    gap: 25px;
+    width: 95%;
+  }
+
+  .infoBox {
+    width: 65%;
+    padding: 30px;
+  }
+
+  .imageBox {
+    width: 35%;
+  }
+}
+
 @media (max-width: 900px) {
   .about {
-    flex-direction: column;
+    flex-direction: column; /* التبديل إلى تخطيط عمودي */
+    gap: 30px;
+    align-items: center;
   }
 
-  .container {
-    width: 80%;
+  .infoBox {
+    width: 100%; /* يملأ العرض المتاح ضمن الـ about */
+    order: 2; /* وضع صندوق المعلومات في الأسفل */
   }
 
-  .pict {
-    width: 40%;
+  .imageBox {
+    width: 60%; /* حجم الصورة على الأجهزة اللوحية */
+    max-width: 350px;
+    height: auto;
+    order: 1; /* وضع الصورة في الأعلى */
   }
 }
 
-@media (max-width: 700px) {
-  .about {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
+@media (max-width: 600px) {
+  .pageWrapper {
+    padding: 20px 10px;
   }
 
-  .container {
-    width: 95%;
-    padding: 15px;
+  .infoBox {
+    padding: 20px;
   }
 
   .name {
-    font-size: 26px;
+    font-size: 30px;
   }
   .name span {
-    font-size: 26px;
+    font-size: 30px;
+  }
+
+  .typew {
+    font-size: 16px;
   }
 
   .description h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .description p {
     font-size: 16px;
   }
 
-  .pict {
-    width: 50%;
+  .imageBox {
+    width: 80%;
   }
 }
