@@ -56,7 +56,7 @@ const page = () => {
           src="/Hamzabeji-dev.jpg"
           alt="developer web"
           width={300}
-          height={300}
+          height={200}
           className={styles.img}
         />
       </div>
